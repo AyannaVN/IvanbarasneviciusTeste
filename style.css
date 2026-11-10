@@ -632,6 +632,13 @@ section:not(.hero) .kicker{
   background:#000;
   border:1px solid var(--line);
 }
+@media screen and (min-width:900px){
+  .playlist-embed{
+      width:min(100%,350px);
+      margin:24px auto 18px;
+  }
+  
+}
 .project-featured .playlist-embed iframe{
   position:absolute;
   inset:0;
