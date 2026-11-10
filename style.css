@@ -619,7 +619,7 @@ section:not(.hero) .kicker{
   position: relative;
   width: 350px;
   max-width: 100%;
-  aspect-ratio: 350 / 470;
+  /*aspect-ratio: 350 / 470;*/
   margin: 24px auto 18px;
   overflow: hidden;
   background: #000;
@@ -992,20 +992,23 @@ section,
 /* COMPUTADOR */
 @media (min-width: 901px) {
   .project-featured .playlist-embed {
-      width: 650px;
+    aspect-ratio: 650 / 350;
+    width: 650px;
   }
 }
 
 /* TABLET */
 @media (min-width: 621px) and (max-width: 900px) {
   .project-featured .playlist-embed {
-      width: 480px;
+    aspect-ratio: 480 / 450;
+    width: 480px;
   }
 }
 
 /* CELULAR */
 @media (max-width: 620px) {
   .project-featured .playlist-embed {
-      width: 240px;
+    aspect-ratio: 350 / 470;
+    width: 340px;
   }
 }
