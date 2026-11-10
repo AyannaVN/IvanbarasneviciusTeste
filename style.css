@@ -614,7 +614,7 @@ section:not(.hero) .kicker{
   gap:24px;
   align-items:start;
 }
-.project-featured{
+.project-featured .playlist-embed{
   position:relative;
   width:min(100%,350px);
   aspect-ratio:350/470;
@@ -622,22 +622,6 @@ section:not(.hero) .kicker{
   overflow:hidden;
   background:#000;
   border:1px solid var(--line);
-}
-.playlist-embed{
-  position:relative;
-  /*width:min(100%,350px);*/
-  aspect-ratio:350/470;
-  /*margin:24px auto 18px;*/
-  overflow:hidden;
-  background:#000;
-  border:1px solid var(--line);
-}
-@media screen and (min-width:900px){
-  .playlist-embed{
-      width:min(100%,350px);
-      margin:24px auto 18px;
-  }
-  
 }
 .project-featured .playlist-embed iframe{
   position:absolute;
