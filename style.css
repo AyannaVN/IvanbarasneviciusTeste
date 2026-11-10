@@ -614,7 +614,7 @@ section:not(.hero) .kicker{
   gap:24px;
   align-items:start;
 }
-.project-featured .playlist-embed{
+/*.project-featured .playlist-embed{
   position:relative;
   width:min(100%,350px);
   aspect-ratio:350/470;
@@ -629,7 +629,29 @@ section:not(.hero) .kicker{
   width:100%;
   height:100%;
   border:0;
+}*/
+
+/* Iframe responsivo para computador, tablet e celular */
+.playlist-embed {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 350 / 470;
+  margin: 24px auto 18px;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid var(--line);
 }
+
+.playlist-embed iframe {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .project-featured > a{
   display:inline-block;
   margin-top:6px;
@@ -706,6 +728,26 @@ section:not(.hero) .kicker{
     }
 }
 
+/* Computadores */
+@media (min-width: 901px) {
+  .playlist-embed {
+      max-width: 350px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 621px) and (max-width: 900px) {
+  .playlist-embed {
+      max-width: 320px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 620px) {
+  .playlist-embed {
+      max-width: 100%;
+  }
+}
 .production .copy h2{
   margin-bottom:34px;
 }
