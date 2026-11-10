@@ -615,11 +615,10 @@ section:not(.hero) .kicker{
   align-items:start;
 }
 
-/* Iframes das playlists */
 .project-featured .playlist-embed {
   position: relative;
-  width: 100%;
-  max-width: 350px;
+  width: 350px;
+  max-width: 100%;
   aspect-ratio: 350 / 470;
   margin: 24px auto 18px;
   overflow: hidden;
@@ -632,31 +631,8 @@ section:not(.hero) .kicker{
   inset: 0;
   width: 100%;
   height: 100%;
-  display: block;
   border: 0;
 }
-
-/* Computadores */
-@media (min-width: 901px) {
-  .project-featured .playlist-embed {
-      max-width: 350px;
-  }
-}
-
-/* Tablets */
-@media (min-width: 621px) and (max-width: 900px) {
-  .project-featured .playlist-embed {
-      max-width: 300px;
-  }
-}
-
-/* Celulares */
-@media (max-width: 620px) {
-  .project-featured .playlist-embed {
-      max-width: 100%;
-  }
-}
-
 .project-featured > a{
   display:inline-block;
   margin-top:6px;
@@ -1009,5 +985,27 @@ section,
   }
   .links a:last-child{
     border-bottom:0;
+  }
+}
+
+
+/* COMPUTADOR */
+@media (min-width: 901px) {
+  .project-featured .playlist-embed {
+      width: 650px;
+  }
+}
+
+/* TABLET */
+@media (min-width: 621px) and (max-width: 900px) {
+  .project-featured .playlist-embed {
+      width: 480px;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 620px) {
+  .project-featured .playlist-embed {
+      width: 240px;
   }
 }
