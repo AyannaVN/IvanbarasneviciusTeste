@@ -1007,7 +1007,7 @@ section,
     width: 650px;
   }
   .imagem-responsiva {
-    background-image: url("img/foto\ 2\ -\ fina.jpg");
+    background-image: url("img/foto2-fina.jpg");
 }
 }
 
@@ -1019,7 +1019,7 @@ section,
   }
   .imagem-responsiva {
   height: 460px;
-  background-image: url("img/foto\ 2\ -\ larga.jpg");
+  background-image: url("img/foto2-fina.jpg");
   }
 }
 
@@ -1031,7 +1031,7 @@ section,
   }
   .imagem-responsiva {
     height: 460px;
-    background-image: url("img/foto\ 2\ -\ larga.jpg");
+    background-image: url("img/foto2-larga.jpg");
   }
 }
 
